@@ -43,7 +43,7 @@ const Home = () => {
               </div>
 
               <div className="card-body">
-                <table class="table">
+                <table className="table">
                   <thead>
                     <tr>
                       <th scope="col">No</th>
@@ -56,7 +56,7 @@ const Home = () => {
                   </thead>
                   <tbody>
                     {productList.map((p, num) => (
-                      <tr>
+                      <tr key={p.id}>
                         <td>{num + 1}</td>
                         <td>{p.productName}</td>
                         <td>{p.description}</td>
